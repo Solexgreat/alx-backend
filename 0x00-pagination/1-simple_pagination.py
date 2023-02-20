@@ -26,4 +26,5 @@ class Server:
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
             pass
 
-    def get_page(page = 1, page_size = 10):   
+    def get_page(page = 1, page_size = 10):
+        assert
