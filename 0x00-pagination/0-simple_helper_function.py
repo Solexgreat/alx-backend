@@ -3,9 +3,9 @@
 from typing import Tuple
 
 
-def index_range(page: int , page_size: int)-> Tuple[int, int]:
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
-    function return the page and page_size in a tuple 
+    function return the page and page_size in a tuple
     """
     result = ((page - 1) * page_size, page_size * page)
     return(result)
