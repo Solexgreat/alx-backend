@@ -39,8 +39,7 @@ class Server:
         """
         """
         total_pages = math.ceil(len(self.dataset()) / page_size)
-        [start, end] = index_range(page, page_size)
-        data = self.get_page(start, end)
+        data = self.get_page(page, page_size)
         next_page = None
         if page_size != 0:
             next_page = page + 1 
