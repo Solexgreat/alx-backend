@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ 0-main """
 
-from base_Caching import BaseCaching
+BaseCaching = __import__('base_caching').BaseCaching
 from typing import Union
 
 
@@ -17,7 +17,7 @@ class BasicCache(BaseCaching):
     def get(self, key: str) -> Union[None, object]:
         """
         """
-        if key is not self.cache_data.keys() or key is None:
+        if key not in self.cache_data.keys() or key is None:
             return None
         return self.cache_data[key]
 
